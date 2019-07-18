@@ -24,6 +24,7 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       {% if app.user %}
+      <li><a href="{{ path('app_userprofile') }}"><span class="glyphicon glyphicon-user"></span> Profil</a></li>
       <li><a href="{{ path('app_logout') }}"><span class="glyphicon glyphicon-log-out"></span> Wyloguj</a></li>
       {% else %}
       <li><a href="{{ path('app_register') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
